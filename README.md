@@ -2,7 +2,7 @@
 
 📥 STEP-BY-STEP PULL:
 -- git clone <ssh URL> 🧬
--- git push 📤 (Μικρή παρένθεση: εδώ ίσως ήθελες να γράψεις git pull, αλλά το αφήνω όπως το έδωσες!) 😉
+-- git push 📤 
 
 🐛 STEP-BY-STEP DEBUGGING:
 -- right click to index.html code 🖱️
