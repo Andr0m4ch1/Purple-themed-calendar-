@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <p class="current-date"></p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                <span id="next" class="material-symbols-rounded">chevron_right</span>
+            </div>
+        </header>
+        <div class="calendar">
+            <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <ul class="days">
+            </ul>
+        </div>
+    </div>
+
+    <div id="todo-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-date-title">To-Do List</h2>
+            
+            <ul id="pin-list"></ul>
+            <ul id="todo-list"></ul>
+            
+            <div class="add-todo-container">
+                <input type="text" id="new-todo-input" placeholder="Add a new task...">
+                <button id="add-todo-btn">Add</button>
+            </div>
+            <div class="add-pin-container">
+                <input type="text" id="new-pin-input" placeholder="Add a new pin...">
+                <button id="add-pin-btn">Add Pin</button>
+                <button id="delete-pin-btn">Delete Pin</button>
+            </div>
+            <div class="delete-todo-container" style="margin-top: 15px;">
+                <button id="delete-todo-btn" style="padding: 8px 15px; background: #e74c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Delete All To-Dos</button>
+            </div>
+            <div class="modal-footer" style="margin-top: 15px; text-align: right;">
+                <button id="close-modal-btn" style="padding: 8px 15px; background: #ccc; border: none; border-radius: 5px; cursor: pointer;">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

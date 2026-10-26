@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "1100:1100"
+    volumes:
+      - .:/app
+      - ../frontend:/frontend
+    environment:
+    - PYTHONUNBUFFERED=1
+    restart: unless-stopped
